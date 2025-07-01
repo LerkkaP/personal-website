@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Erik Peteri</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Vanta.js dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+
+  <!-- Google fonts stuff -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <script>
+    window.addEventListener('load', () => {
+      VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        /*color: 0xf7f7f7,*/
+        color: 0x818181,
+        backgroundColor: 0x0,
+        spacing: 17.00
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <!--
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  -->
+
+  <div class="vanta-container">
+    <div id="vanta-bg"></div>
+
+    <section class="hero-content">
+      <h1>Erik Peteri</h1>
+      <h2>Data science student</h2>
+      <p>I'm a data science student passionate about turning data into insights using machine learning and analysis. Currently pursuing further studies and seeking opportunities in data analytics and research.</p>
+      <div>
+        <img width="40" height="40" src="assets/github.svg" alt="Description of image" />
+        <img width="40" height="40"  src="assets/linkedin.svg" alt="Description of image" />
+      </div>    
+    </section>
+  </div>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <h3>Data Science Student | Computer Science Graduate</h3>
+      <p>
+        I'm a data science student passionate about turning data into insights using machine learning and analysis.
+        Currently pursuing further studies and seeking opportunities in data analytics and research.
+      </p>
+
+      <h3>Education</h3>
+      <ul>
+        <li>MSc in Data Science – University of Helsinki (2025 - )</li>
+        <li>BSc honours in Computer Science – University of Helsinki (2022 - 2025)</li>
+      </ul>
+
+      <h3>Work Experience</h3>
+      <ul>
+        <li>Teaching Assistant - Linkki</li>
+        <li>Instructor - Software Engineering project</li>
+        <li>IT-support - 2024 University of Helsinki entrance exams</li>
+        <li>Instructor - Databases and Web-programming University of Helsinki</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Python, C++</li>
+        <li>pandas, scikit-learn, TensorFlow</li>
+        <li>Data Visualization, Machine Learning, Statistics</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Project One</strong> – Short description. <a href="#">GitHub</a></li>
+        <li><strong>Project Two</strong> – Short description. <a href="#">GitHub</a></li>
+        <li><strong>Project Three</strong> – Short description. <a href="#">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Erik Peteri
+  </footer>
+
+</body>
+</html>
