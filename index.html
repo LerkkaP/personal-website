@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-  <script>
+<script>
     window.addEventListener('load', () => {
       VANTA.NET({
         el: "#vanta-bg",
@@ -28,7 +28,8 @@
         scaleMobile: 1.00,
         /*color: 0xf7f7f7,*/
         color: 0x818181,
-        backgroundColor: 0x0,
+        /*backgroundColor: 0x0,*/
+        backgroundColor: 0xf0f0f,
         spacing: 17.00
       });
     });
@@ -52,28 +53,25 @@
       <h2>Data science student</h2>
       <p>I'm a data science student passionate about turning data into insights using machine learning and analysis. Currently pursuing further studies and seeking opportunities in data analytics and research.</p>
       <div>
-        <img width="40" height="40" src="assets/github.svg" alt="Description of image" />
-        <img width="40" height="40"  src="assets/linkedin.svg" alt="Description of image" />
+        <a href="https://github.com/LerkkaP">
+          <img width="40" height="40" src="assets/github.svg" alt="Description of image" />
+        </a>
+        <a>
+          <img width="40" height="40"  src="assets/linkedin.svg" alt="Description of image" />
+        </a>
       </div>    
     </section>
   </div>
 
   <main>
     <section id="about">
-      <h2>About Me</h2>
-      <h3>Data Science Student | Computer Science Graduate</h3>
-      <p>
-        I'm a data science student passionate about turning data into insights using machine learning and analysis.
-        Currently pursuing further studies and seeking opportunities in data analytics and research.
-      </p>
-
-      <h3>Education</h3>
+      <h2>Education</h2>
       <ul>
         <li>MSc in Data Science – University of Helsinki (2025 - )</li>
         <li>BSc honours in Computer Science – University of Helsinki (2022 - 2025)</li>
       </ul>
 
-      <h3>Work Experience</h3>
+      <h2>Work Experience</h2>
       <ul>
         <li>Teaching Assistant - Linkki</li>
         <li>Instructor - Software Engineering project</li>
@@ -81,14 +79,14 @@
         <li>Instructor - Databases and Web-programming University of Helsinki</li>
       </ul>
 
-      <h3>Skills</h3>
+      <h2>Skills</h2>
       <ul>
         <li>Python, C++</li>
         <li>pandas, scikit-learn, TensorFlow</li>
         <li>Data Visualization, Machine Learning, Statistics</li>
       </ul>
     </section>
-
+    <!--
     <section id="projects">
       <h2>Projects</h2>
       <ul>
@@ -97,6 +95,43 @@
         <li><strong>Project Three</strong> – Short description. <a href="#">GitHub</a></li>
       </ul>
     </section>
+  -->
+    <section id="projects">
+  <h2>Projects</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <img src="assets/project1.png" alt="Project One screenshot" />
+      <div class="project-info">
+        <h3>XOR neural network</h3>
+        <p>Neural network for the XOR problem. Written in C++
+           and wrapped in Python with pybind.
+
+        </p>
+          <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" class="external-link">
+            <img width="16" height="16" src="assets/link.svg" alt="External link icon" />
+            <span>github repo</span>
+          </a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/project2.png" alt="Project Two screenshot" />
+      <div class="project-info">
+        <h3>Project Two</h3>
+        <p>Short description of project two.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="assets/project3.png" alt="Project Three screenshot" />
+      <div class="project-info">
+        <h3>Project Three</h3>
+        <p>Short description of project three.</p>
+        <a href="#">GitHub Repo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <footer>
