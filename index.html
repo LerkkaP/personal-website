@@ -18,7 +18,7 @@
 <script>
   window.addEventListener('load', () => {
     VANTA.NET({
-      el: "#vanta-bg",
+      el: ".vanta-bg",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -26,9 +26,7 @@
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      /*color: 0xf7f7f7,*/
       color: 0x818181,
-      /*backgroundColor: 0x0,*/
       backgroundColor: 0xf0f0f,
       spacing: 17.00
     });
@@ -37,7 +35,7 @@
 </head>
 <body>
   <div class="vanta-container">
-    <div id="vanta-bg"></div>
+    <div class="vanta-bg"></div>
     <section class="hero-content">
       <h1>Erik Peteri</h1>
       <h2>Data science student</h2>
@@ -54,11 +52,11 @@
   </div>
 
   <main>
-    <section id="about">
+    <section class="about">
       <h2>Education</h2>
       <ul>
-        <li>MSc in Data Science – University of Helsinki (2025 - )</li>
-        <li>BSc honours in Computer Science – University of Helsinki (2022 - 2025)</li>
+        <li>MSc in Data Science – University of Helsinki 2025 - continuing </li>
+        <li>BSc honours in Computer Science – University of Helsinki 2022 - 2025</li>
       </ul>
 
       <h2>Work Experience</h2>
@@ -82,31 +80,37 @@
     <div class="project-card">
       <img src="assets/project1.png" alt="Project One screenshot" />
       <div class="project-info">
-        <h3>XOR neural network</h3>
+        <div class="project-title">
+          <h3>XOR neural network</h3>
+          <img width="16" height="16" src="assets/link.svg" alt="External link icon" />
+        </div>
         <p>Neural network for the XOR problem. Written in C++
            and wrapped in Python with pybind.
-
         </p>
-          <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" class="external-link">
-            <img width="16" height="16" src="assets/link.svg" alt="External link icon" />
-            <span>github repo</span>
-          </a>
       </div>
     </div>
     <div class="project-card">
-      <img src="assets/project2.png" alt="Project Two screenshot" />
+      <img src="assets/project1.png" alt="Project One screenshot" />
       <div class="project-info">
-        <h3>Project Two</h3>
-        <p>Short description of project two.</p>
-        <a href="#">GitHub Repo</a>
+        <div class="project-title">
+          <h3>XOR neural network</h3>
+          <img width="16" height="16" src="assets/link.svg" alt="External link icon" />
+        </div>
+        <p>Neural network for the XOR problem. Written in C++
+           and wrapped in Python with pybind.
+        </p>
       </div>
     </div>
     <div class="project-card">
-      <img src="assets/project3.png" alt="Project Three screenshot" />
+      <img src="assets/project1.png" alt="Project One screenshot" />
       <div class="project-info">
-        <h3>Project Three</h3>
-        <p>Short description of project three.</p>
-        <a href="#">GitHub Repo</a>
+        <div class="project-title">
+          <h3>XOR neural network</h3>
+          <img width="16" height="16" src="assets/link.svg" alt="External link icon" />
+        </div>
+        <p>Neural network for the XOR problem. Written in C++
+           and wrapped in Python with pybind.
+        </p>
       </div>
     </div>
   </div>
