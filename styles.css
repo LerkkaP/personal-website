@@ -36,6 +36,11 @@ ul li {
   width: 100%;
   height: 100%;
   z-index: 0;
+
+  background-image: url('assets/fallback.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Hero content (your name) */
