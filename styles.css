@@ -116,7 +116,7 @@ a {
   transition: transform 0.3s ease;
 }
 
-a img:hover {
+.icons a img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -128,14 +128,6 @@ a img:hover {
   padding: 1rem 0;
 }
 
-.project-card {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  color: #f5f5f5;  /* keep text visible on dark bg */
-}
-
-
 .project-info h3 {
   margin: 0 0 0.3rem;
   font-weight: 600;
@@ -144,21 +136,28 @@ a img:hover {
 
 .project-info p {
   margin: 0 0 0.5rem;
-  color: #ccc;
-}
-
-.project-info a {
-  color: #62dafc;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
+  color: #222;
 }
 
 .project-title {
   display: flex;
   align-items: baseline;
   gap: 0.25rem;
+}
+
+.project-info span {
+  color: #0000FF;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.project-link {
+  text-decoration: underline;
+  color: #0000FF;
+  text-underline-offset: 2px;
+}
+
+.project-link:hover {
+  cursor: pointer;
 }
