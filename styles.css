@@ -87,12 +87,8 @@ main {
   color: #222;
 }
 
-main section {
-  margin-bottom: 3rem;
-}
-
 main h2 {
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -160,4 +156,25 @@ a {
 
 .project-link:hover {
   cursor: pointer;
+}
+
+.education-item {
+  margin-bottom: 1.5em;
+}
+
+.education-item h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.education-item .institution {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.education-item .years {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
 }
