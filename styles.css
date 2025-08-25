@@ -9,7 +9,7 @@ body {
 }
 
 section {
-  max-width: 950px;
+  max-width: 850px;
   margin: auto;
   padding: 3rem 1.5rem;
 }
@@ -21,17 +21,11 @@ h1, h2, h3 {
 
 h2 {
   display: inline-block;
-  padding-bottom: 0.3rem;
   font-weight: 700;
 }
 
 .about h2 {
-  border-left: 2px solid #1e90ff;
-  padding-left: .8rem;
-}
-
-h3 {
-  color: #4da6ff;
+  border-bottom: 2px solid #1e90ff;;
 }
 
 /* === Hero Section (Vanta stays!) === */
@@ -52,7 +46,6 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 0;
-  filter: blur(.6px);
 }
 
 .vanta-bg::after {
@@ -73,7 +66,7 @@ h3 {
   max-width: 850px;
   text-align: left;
   padding: 2rem;
-  text-shadow: 0 0 30px rgba(0,0,0,0.8);
+  backdrop-filter: blur(.8px);
 }
 
 .hero-content h1 {
@@ -82,8 +75,8 @@ h3 {
 }
 
 .hero-content h2 {
-  margin-top: 0.5rem;
   font-weight: 400;
+  margin: 0;
 }
 
 .hero-content p {
@@ -142,38 +135,35 @@ main::after {
 }
 
 /* === Lists === */
+
 ul {
   list-style-type: none;
   padding-left: 0;
 }
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
 ul li::before {
   content: "▹";
   color: #1e90ff;
   margin-right: 0.5rem;
 }
 
+ul li h3 {
+  margin: 0; /* remove default h3 margin */
+}
+
 /* === Footer === */
+
 footer {
   text-align: center;
   padding: 2rem 1rem;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: #0a0a0f;
-}
-
-/* === Links === */
-a {
-  color: #1e90ff;
-  text-decoration: none;
-  transition: color 0.3s, transform 0.2s;
-}
-a:hover {
-  color: #63b3ff;
-  transform: translateY(-2px);
-}
-.project-link {
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 /* === Icons === */
@@ -186,34 +176,8 @@ a:hover {
   cursor: pointer;
 }
 
-/* === Project Cards === */
-.project-list {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-}
-.project-card {
-  background: rgba(30, 30, 40, 0.95);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 25px rgba(30, 144, 255, 0.3);
-}
-.project-info h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.4rem;
-  color: #63b3ff;
-}
-.project-info p {
-  margin: 0 0 0.8rem;
-  color: #cfd5e1;
-}
-
 /* === Education & Work === */
+
 .education-item {
   margin-bottom: 2rem;
 }
@@ -229,6 +193,34 @@ a:hover {
 }
 .education-item .years {
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1rem;
   color: #7a8596;
 }
+
+
+
+.work-item {
+  margin-bottom: 2rem;
+}
+
+/* Arrow before job title, like Education arrows */
+.work-item h3 {
+  margin: 0;
+  font-weight: 600;
+  color: #ffffff;
+  position: relative;
+}
+
+
+.work-item .institution {
+  margin: 0.2rem 0;
+  font-size: 1em;
+  color: #9bbcf5;
+}
+
+.work-item .years {
+  margin: 0;
+  font-size: 1rem;
+  color: #7a8596;
+}
+
