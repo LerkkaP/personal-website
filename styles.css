@@ -11,7 +11,7 @@ body {
 section {
   max-width: 850px;
   margin: auto;
-  padding: 3rem 1.5rem;
+  padding-top: 3rem;
 }
 
 /* === Headings === */
@@ -28,45 +28,8 @@ h2 {
   border-bottom: 2px solid #1e90ff;;
 }
 
-/* === Hero Section (Vanta stays!) === */
-.vanta-container {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  color: white;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.vanta-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.vanta-bg::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(to bottom, rgba(14,14,21,0) 0%, #0e0e15 100%);
-  pointer-events: none;
-  z-index: 2;
-}
-
 .hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 850px;
-  text-align: left;
-  padding: 2rem;
-  backdrop-filter: blur(.8px);
+  display: flex;
 }
 
 .hero-content h1 {
@@ -176,6 +139,10 @@ footer {
   cursor: pointer;
 }
 
+.icons a {
+  text-decoration: none;
+}
+
 /* === Education & Work === */
 
 .education-item {
@@ -224,3 +191,6 @@ footer {
   color: #7a8596;
 }
 
+.info {
+  padding-left: 1.5rem;
+}
