@@ -11,7 +11,6 @@ body {
 section {
   max-width: 850px;
   margin: auto;
-  padding-top: 3rem;
 }
 
 /* === Headings === */
@@ -52,10 +51,10 @@ h2 {
 main {
   position: relative;
   background: #0e0e15;
-  margin-top: -3rem;
-  padding: 2rem;
   overflow: hidden;
   z-index: 1;
+  height: 90vh;
+  display: flex;
 }
 
 /* Glowing radial blobs - smaller and brighter */
@@ -179,6 +178,7 @@ footer {
   color: #7a8596;
 }
 
-.info {
-  padding-left: 1.5rem;
+a {
+  color: #1e90ff;
 }
+
