@@ -53,7 +53,7 @@ main {
   background: #0e0e15;
   overflow: hidden;
   z-index: 1;
-  height: 90vh;
+  height: 100vh;
   display: flex;
 }
 
@@ -104,16 +104,6 @@ ul li::before {
 
 ul li h3 {
   margin: 0; /* remove default h3 margin */
-}
-
-/* === Footer === */
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #888;
-  font-size: 1rem;
-  background: #0a0a0f;
 }
 
 /* === Icons === */
