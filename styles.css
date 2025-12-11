@@ -42,9 +42,12 @@ h2 {
 }
 
 .hero-content p {
-  margin-top: 1.5rem;
   font-size: 1.1rem;
   color: #d0d6e0;
+}
+
+.info p {
+  margin-top: 0;
 }
 
 /* === Main content sections === */
@@ -171,4 +174,11 @@ ul li h3 {
 a {
   color: #1e90ff;
   text-underline-offset: 3px;
+}
+
+@media (max-width: 870px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
 }
