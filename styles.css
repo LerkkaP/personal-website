@@ -183,3 +183,58 @@ a {
   background-size: 24px 24px;
   z-index: -1;
 }
+
+/* ----------------------------- */
+/* Blog Page Styles */
+
+#blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#blog-container p {
+  color: #d0d6e0;
+}
+
+#blog-container pre {
+  background-color: #1a1a2b;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #63b3ff;
+}
+
+/* ----------------------------- */
+/* Back to Home link above title */
+
+.blog-main {
+  width: 100%;
+}
+
+.blog-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.back-link {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  z-index: 10;
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Prevent overlap */
+#blog-container {
+  padding-top: 3rem;
+}
+
+@media (max-width: 870px) {
+  #blog-container {
+    padding: 1.5rem 1.5rem;
+  }
+}
