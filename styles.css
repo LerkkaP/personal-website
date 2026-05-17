@@ -233,3 +233,55 @@ a {
 #blog-container {
   padding-top: 3rem;
 }
+
+/* ----------------------------- */
+/* Blog List */
+
+.blog-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.1rem 1.3rem;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  text-decoration: none;
+  color: inherit;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.blog-card-content h3 {
+  margin: 0.2rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.blog-meta {
+  font-size: 0.82rem;
+  color: #7a8596;
+  letter-spacing: 0.02em;
+}
+
+.blog-arrow {
+  font-size: 1.25rem;
+  color: #63b3ff;
+
+  transition: transform 0.2s ease;
+}
+
