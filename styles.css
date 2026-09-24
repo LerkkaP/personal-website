@@ -95,11 +95,11 @@ ul li {
   align-items: center;
 }
 
-ul li::before {
+/*ul li::before {
   content: "▹";
   color: #1e90ff;
   margin-right: 0.5rem;
-}
+}*/
 
 ul li h3 {
   margin: 0;
@@ -234,54 +234,54 @@ a {
   padding-top: 3rem;
 }
 
-/* ----------------------------- */
-/* Blog List */
-
 .blog-list {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 14px;
+  margin-top: 12px;
 }
 
+/* Card */
 .blog-card {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
-  padding: 1.1rem 1.3rem;
-  border-radius: 10px;
-
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-
+  padding: 16px 18px;
+  border-radius: 5px;
   text-decoration: none;
-  color: inherit;
+  color: white;
 
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease;
+  /* glass */
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.blog-card-content h3 {
-  margin: 0.2rem 0 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #ffffff;
+
+.blog-card h3 {
+  color: #1e90ff;
 }
 
-.blog-meta {
-  font-size: 0.82rem;
-  color: #7a8596;
-  letter-spacing: 0.02em;
+/* left side */
+.blog-left h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
+.blog-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+/* arrow */
 .blog-arrow {
-  font-size: 1.25rem;
-  color: #63b3ff;
-
-  transition: transform 0.2s ease;
+  font-size: 18px;
 }
-
