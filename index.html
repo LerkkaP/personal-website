@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Erik Peteri</title>
-
   <meta
     name="description"
     content="Erik Peteri — Software developer & data science student"
+  />
+  <link rel="icon" type="image/png" href="/assets/favicon32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet"
   />
 
   <style>
@@ -32,6 +37,7 @@
     body {
       background: var(--background);
       color: var(--text);
+      font-family: "DM Sans", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -50,7 +56,6 @@
       max-width: 720px;
     }
 
-    /* Name */
 
     h1 {
       margin: 0;
@@ -62,19 +67,17 @@
       letter-spacing: -0.035em;
     }
 
-    /* Job title */
 
     .role {
       margin: 8px 0 0;
 
       color: var(--muted);
 
-      font-family: "Courier New", Courier, monospace;
+      font-family: "DM Sans", sans-serif;
       font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+      font-weight: 400;
       line-height: 1.5;
     }
-
-    /* Social links */
 
     .links {
       display: flex;
@@ -116,8 +119,6 @@
       fill: currentColor;
     }
 
-    /* Divider */
-
     .divider {
       width: 1px;
       height: 22px;
@@ -127,8 +128,6 @@
       background: var(--line);
     }
 
-    /* CV */
-
     .cv {
       display: inline-flex;
       align-items: center;
@@ -136,7 +135,7 @@
 
       color: var(--text);
 
-      font-family: "Courier New", Courier, monospace;
+      font-family: "DM Sans", sans-serif;
       font-size: 0.95rem;
       text-decoration: none;
 
@@ -152,20 +151,17 @@
       line-height: 1;
     }
 
-    /* Bio */
-
     .bio {
       max-width: 680px;
 
       margin: 30px 0 0;
 
-      font-family: "Courier New", Courier, monospace;
+      font-family: "DM Sans", sans-serif;
       font-size: clamp(1rem, 1.1vw, 1.08rem);
+      font-weight: 400;
       line-height: 1.65;
       letter-spacing: -0.015em;
     }
-
-    /* Mobile */
 
     @media (max-width: 700px) {
       main {
@@ -211,7 +207,6 @@
 
       <div class="links">
 
-
         <a
           class="icon-link"
           href="https://github.com/LerkkaP"
@@ -225,7 +220,6 @@
             />
           </svg>
         </a>
-
 
         <a
           class="icon-link"
@@ -241,13 +235,12 @@
           </svg>
         </a>
 
+        <!-- 
 
-        <!--
         <span
           class="divider"
           aria-hidden="true"
         ></span>
-
 
         <a
           class="cv"
@@ -255,25 +248,18 @@
           download
         >
           Download CV
-          <span
-            class="arrow"
-            aria-hidden="true"
-          >
-            ↓
-          </span>
-        </a>-->
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+
+        -->
 
       </div>
-
-
       <p class="bio">
-        I am pursuing a Master’s degree in Data Science at the
-        University of Helsinki and hold a Bachelor’s Honours degree
-        in Computer Science. I currently work as a Software Developer
-        at the MOOC Center, where I primarily work with TypeScript
-        and Rust.
+        I currently work as a software developer at the MOOC Center of the
+        University of Helsinki, primarily using TypeScript and Rust.
+        I am also pursuing a master’s degree in data science at the
+        University of Helsinki and hold a bachelor’s degree in computer science.      
       </p>
-
     </section>
   </main>
 
